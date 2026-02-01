@@ -1,0 +1,12 @@
+{
+  "name": "cc-clip",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @cc-clip/server dev\" \"pnpm --filter @cc-clip/client dev\"",
+    "dev:client": "pnpm --filter @cc-clip/client dev",
+    "dev:server": "pnpm --filter @cc-clip/server dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
